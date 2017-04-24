@@ -1,5 +1,8 @@
 #include <iostream>
 #include <windows.h>
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
 #define SIZE 999
 
 using namespace std;
