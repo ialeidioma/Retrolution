@@ -1,8 +1,15 @@
 #include <iostream>
 #include <windows.h>
+<<<<<<< HEAD
 #include "string"
 #include "functions.h" // We should leave comments for each other in every new update :P
 // I put your #include "functions.h" please don't kill me xD
+=======
+#include <cmath>
+#include <cstdlib>
+#include <ctime>
+#define SIZE 999
+>>>>>>> origin/master
 
 using namespace std;
 
