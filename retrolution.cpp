@@ -1,29 +1,32 @@
 #include <iostream>
 #include <windows.h>
-<<<<<<< HEAD
-#include "string"
-#include "functions.h" // We should leave comments for each other in every new update :P
-// I put your #include "functions.h" please don't kill me xD
-=======
+#include <cstring>
+#include <string>
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
+#include <conio.h>
 #define SIZE 999
->>>>>>> origin/master
 
 using namespace std;
 
+#include "variables.h"
+
 void line();
+void drawapart();
+void drawworld();
+void gotoxy(int x, int y);
+void movement();
+void interaction();
 
 int main()
 {
-    #include "variables.h"
 
     cout << "TO PLAY THIS GAME PLEASE PUT THE CONSOLE ON HALF OF YOUR SCREEN AND TURN ON YOUR AUDIO\n";
     cout << "AFTER YOU HAVE DONE THAT: ";
     system("pause");
     system("cls");
-    cout << "                                    -->HELLO<--\n"; // I also swapped every endl with \n xD
+    cout << "                                    -->HELLO<--\n";
     Sleep(2000);
     cout << "                                 -->AND WELCOME<--\n";
     Sleep(2000);
@@ -51,6 +54,30 @@ int main()
     cout << "ZzZzZzZ...\n";
     Sleep(700);
     cout << "ZzZzzZ...\n";
-    cout << "\a\n";
+    cout << "\a"; //no need to add \n here since it will go down a line (\a is alarm sound XD)
+    Sleep(1000);
+    cout << "\"Huh?\"\n";
+    Sleep(1000);
+    cout << "\a";
+    Sleep(1000);
+    cout<< "\"I better get up and check it out\"\n";
+    Sleep(1000);
+    system("cls");
+    Sleep(1000);
+    system("color f0");
+    drawapart();
+    movement();
+    gotoxy(1,17);
+    cout<<str;
+    Sleep(600);
+    cout<<string(str.length(),'\b');
+    for(i=0;i<999;i++)
+        cout<<" ";
+    system("cls");
+    drawworld();
+    system("pause>nul");
+
     return 0;
 }
+
+#include "functions.h" // function declaration is usually putted after the main() but doesn't really change i guess..
