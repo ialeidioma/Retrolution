@@ -13,15 +13,19 @@ using namespace std;
 #include "variables.h"
 
 void line();
+void clr();
 void drawapart();
 void drawworld();
+void drawtut();
 void gotoxy(int x, int y);
 void movement();
+void movementworld();
+void movement_tut();
 void interaction();
+void interaction_tut();
 
 int main()
 {
-
     cout << "TO PLAY THIS GAME PLEASE PUT THE CONSOLE ON HALF OF YOUR SCREEN AND TURN ON YOUR AUDIO\n";
     cout << "AFTER YOU HAVE DONE THAT: ";
     system("pause");
@@ -31,7 +35,7 @@ int main()
     cout << "                                 -->AND WELCOME<--\n";
     Sleep(2000);
     cout << "                               -->TO RETROLUTION<--\n";
-    Sleep(5000);
+    Sleep(2000);
     system("cls");
     cout << "This is Retrolution a small project made by Ernad619 and Ialeidioma,\n";
     Sleep(1500);
@@ -51,10 +55,14 @@ int main()
     getline(cin,player_name);
     cout << "Hello, " << player_name << endl;
     Sleep(700);
+    cout << "let's introduce you to the control system\n";
+    Sleep(1200);
+    #include "tut.h"
+    x=1,y=1;
     cout << "ZzZzZzZ...\n";
     Sleep(700);
     cout << "ZzZzzZ...\n";
-    cout << "\a"; //no need to add \n here since it will go down a line (\a is alarm sound XD)
+    cout << "\a";
     Sleep(1000);
     cout << "\"Huh?\"\n";
     Sleep(1000);
@@ -74,10 +82,11 @@ int main()
     for(i=0;i<999;i++)
         cout<<" ";
     system("cls");
+    x=26,y=8;
     drawworld();
-    system("pause>nul");
+    movementworld();
 
     return 0;
 }
 
-#include "functions.h" // function declaration is usually putted after the main() but doesn't really change i guess..
+#include "functions.h"
