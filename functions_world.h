@@ -192,8 +192,11 @@ void movementworld()
 {
     while(true)
     {
-        if(mapArrayOne[ybefore][xbefore]==3 || mapArrayOne[ybefore][xbefore]==4 || mapArrayOne[ybefore][xbefore]==22 || mapArrayOne[ybefore][xbefore]==14)
-        {}
+        if(mapArrayTwo[ybefore][xbefore]==56)
+        {
+            gotoxy(xbefore,ybefore);
+            cout<<char(219);
+        }
         else
         {
             gotoxy(xbefore,ybefore);
@@ -217,8 +220,17 @@ void movementworld()
         else if(inputkey=='d') //move right
             x+=1;
         else if(inputkey=='e') //player triggers interaction
-            interaction();
-        if(mapArrayTwo[y][x]==1)
+            interaction_world();
+        if(mapArrayTwo[y][x]==1 || mapArrayTwo[y][x]==2 || mapArrayTwo[y][x]==3 || mapArrayTwo[y][x]==4 || mapArrayTwo[y][x]==5 || mapArrayTwo[y][x]==6 ||
+           mapArrayTwo[y][x]==7 || mapArrayTwo[y][x]==8 || mapArrayTwo[y][x]==9 || mapArrayTwo[y][x]==10 || mapArrayTwo[y][x]==11 || mapArrayTwo[y][x]==12 ||
+           mapArrayTwo[y][x]==13 || mapArrayTwo[y][x]==14 || mapArrayTwo[y][x]==15 || mapArrayTwo[y][x]==16 || mapArrayTwo[y][x]==17 || mapArrayTwo[y][x]==18 ||
+           mapArrayTwo[y][x]==19 || mapArrayTwo[y][x]==20 || mapArrayTwo[y][x]==21 || mapArrayTwo[y][x]==22 || mapArrayTwo[y][x]==23 || mapArrayTwo[y][x]==24 ||
+           mapArrayTwo[y][x]==25 || mapArrayTwo[y][x]==26 || mapArrayTwo[y][x]==27 || mapArrayTwo[y][x]==28 || mapArrayTwo[y][x]==29 || mapArrayTwo[y][x]==30 ||
+           mapArrayTwo[y][x]==31 || mapArrayTwo[y][x]==32 || mapArrayTwo[y][x]==33 || mapArrayTwo[y][x]==34 || mapArrayTwo[y][x]==35 || mapArrayTwo[y][x]==36 ||
+           mapArrayTwo[y][x]==37 || mapArrayTwo[y][x]==38 || mapArrayTwo[y][x]==39 || mapArrayTwo[y][x]==40 || mapArrayTwo[y][x]==41 || mapArrayTwo[y][x]==42 ||
+           mapArrayTwo[y][x]==43 || mapArrayTwo[y][x]==44 || mapArrayTwo[y][x]==45 || mapArrayTwo[y][x]==46 || mapArrayTwo[y][x]==47 || mapArrayTwo[y][x]==48 ||
+           mapArrayTwo[y][x]==49 || mapArrayTwo[y][x]==50 || mapArrayTwo[y][x]==51 || mapArrayTwo[y][x]==52 || mapArrayTwo[y][x]==53 || mapArrayTwo[y][x]==55 ||
+           mapArrayTwo[y][x]==57)
         {
             x=xbefore;
             y=ybefore;
@@ -226,6 +238,8 @@ void movementworld()
     }
 }
 
-
+void interaction_world()
+{
+}
 
 #endif // FUNCTIONS_WORLD_H_INCLUDED

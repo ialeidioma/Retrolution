@@ -23,6 +23,7 @@ void movementworld();
 void movement_tut();
 void interaction();
 void interaction_tut();
+void interaction_world();
 
 int main()
 {

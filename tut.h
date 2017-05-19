@@ -3,18 +3,18 @@
 
 system("cls");
 cout<<"so this is you "<< char(1)<<"\n";
-Sleep(700);
+Sleep(1000);
 cout<<"the game has a ";
-Sleep(900);
+Sleep(1000);
 system("color f0");
 cout<<"day ";
-Sleep(900);
+Sleep(1000);
 system("color 0f");
 cout<<"& night cycle";
-Sleep(900);
+Sleep(1000);
 system("cls");
 cout<<"ONWARDS!!!";
-Sleep(700);
+Sleep(900);
 system("cls");
 system("color f0");
 drawtut();
