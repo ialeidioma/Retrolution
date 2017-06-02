@@ -240,6 +240,12 @@ void movementworld()
 
 void interaction_world()
 {
+    if(mapArrayTwo[y+1][x]==2 || mapArrayTwo[y-1][x]==2 || mapArrayThree[y][x+1]==2 || mapArrayThree[y][x-1]==2)
+    {
+        gotoxy(1,30);
+        cout<<"not implemented yet";
+    }
+    //use this for the other numbers, just copy and paste, also clr() can't be used here since it would delete part of the map
 }
 
 #endif // FUNCTIONS_WORLD_H_INCLUDED
