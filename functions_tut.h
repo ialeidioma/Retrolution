@@ -110,13 +110,13 @@ void movement_tut()
         {
             gotoxy(0,15);
             cout<<"see that ? well that is a door XD\n";
-            Sleep(1000);
+            Sleep(2000);
             cout<<"in order to open a door you need to turn the handle\n";
-            Sleep(1000);
+            Sleep(2000);
             cout<<"that was obvious eh ? XD\n";
-            Sleep(1000);
+            Sleep(2000);
             cout<<"right right i won't make you lose more time, when you need to interact with something you need to press e and it will magikally work";
-            Sleep(1800);
+            Sleep(2500);
             clr();
         }
     }
@@ -133,9 +133,9 @@ void interaction_tut()
         {
             gotoxy(0,15);
             cout<<"well you seem to be doing just fine!\n";
-            Sleep(1000);
+            Sleep(2500);
             cout<<"now the game starts! Have fun!";
-            Sleep(1000);
+            Sleep(2500);
             tut=false;
         }
         else
@@ -151,7 +151,7 @@ void interaction_tut()
         key=true;
         gotoxy(0,15);
         cout<<"you take out the key";
-        Sleep(1000);
+        Sleep(2000);
         clr();
     }
 }
