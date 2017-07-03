@@ -80,11 +80,11 @@ void drawapart()
                 cout<<":"; // : = Door
                 break;
             case 22:
-                cout<<":"; // : = inside door // about the inside doors (22 and 14) maybe they should open when you press space
-                break;                        // or something .. Like make it so that when you are left/right (or up/down for 14)
-            }                                 // of the door that it should disappear after you press a certain key, but that
-        }                                     // going through it without opening it is impossible .. If that is hard , then just
-        cout << "\n";                         // remove these doors we will try it later
+                cout<<":"; // : = inside door
+                break;
+            }
+        }
+        cout << "\n";
     }
 }
 
@@ -121,6 +121,20 @@ void movement()
             x-=1;
         else if(inputkey=='d') //move right
             x+=1;
+        else if(inputkey=='f')
+        {
+         gotoxy(1,15);
+         cout<<"You own: " << player_money << "money";
+         Sleep(2000);
+         gotoxy(10,22);
+        for(i=0;i<10;i++)
+            cout<<"\b";
+        gotoxy(40,15);
+        for(i=0;i<40;i++)
+            cout<<"\b";
+        for(i=0;i<700;i++)
+            cout<<" ";
+        }
         else if(inputkey=='e') //player triggers interaction
             interaction();
 
@@ -199,6 +213,7 @@ void interaction()
 
         gotoxy(1,15);
             cout<<"You are sleeping....";
+            alcohol_level == 0;
         if(day)
         {
             system("color 0f");

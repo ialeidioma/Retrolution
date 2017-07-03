@@ -64,6 +64,20 @@ void movement_tut()
             x-=1;
         else if(inputkey=='d') //move right
             x+=1;
+        else if(inputkey=='f')
+        {
+         gotoxy(1,15);
+         cout<<"You own: " << player_money << "money";
+         Sleep(2000);
+         gotoxy(10,22);
+        for(i=0;i<10;i++)
+            cout<<"\b";
+        gotoxy(40,15);
+        for(i=0;i<40;i++)
+            cout<<"\b";
+        for(i=0;i<700;i++)
+            cout<<" ";
+        }
         else if(inputkey=='e') //player triggers interaction
             interaction_tut();
         if(mapArrayThree[y][x]==1 || mapArrayThree[y][x]==5)
@@ -115,8 +129,8 @@ void movement_tut()
             Sleep(2000);
             cout<<"that was obvious eh ? XD\n";
             Sleep(2000);
-            cout<<"right right i won't make you lose more time, when you need to interact with something you need to press e and it will magikally work";
-            Sleep(2500);
+            cout<<"right right i won't make you lose more time, when you need to interact with something you need to PRESS E and it will magically work\n\n";
+            system("pause");
             clr();
         }
     }
@@ -143,6 +157,7 @@ void interaction_tut()
             gotoxy(0,15);
             cout<<"you don't seem to have the key, you can't open this\n";
             cout<<"maybe you can find a chest ?";
+            Sleep(3000);
             clr();
         }
     }

@@ -17,17 +17,20 @@ void clr();
 void drawapart();
 void drawworld();
 void drawtut();
+void drawpub();
 void gotoxy(int x, int y);
 void movement();
 void movementworld();
 void movement_tut();
+void movement_pub();
 void interaction();
 void interaction_tut();
 void interaction_world();
+void interaction_pub();
 
 int main()
 {
-    cout << "TO PLAY THIS GAME PLEASE PUT THE CONSOLE ON HALF OF YOUR SCREEN AND TURN ON YOUR AUDIO\n";
+    cout << "TO PLAY THIS GAME PLEASE PUT THE CONSOLE ON HALF OF YOUR SCREEN\n";
     cout << "AFTER YOU HAVE DONE THAT: ";
     system("pause");
     system("cls");
@@ -69,8 +72,6 @@ int main()
     Sleep(1000);
     cout << "\a";
     Sleep(1000);
-    cout<< "\"I better get up and check it out\"\n";
-    Sleep(1000);
     system("cls");
     Sleep(1000);
     system("color f0");
@@ -84,8 +85,11 @@ int main()
         cout<<" ";
     system("cls");
     x=26,y=8;
+    while(not_apart){
+    world=true;
     drawworld();
     movementworld();
+    }
 
     return 0;
 }

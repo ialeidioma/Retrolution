@@ -29,5 +29,6 @@ void clr()
 
 #include "functions_tut.h"
 
+#include "functions_pub.h"
 
 #endif
